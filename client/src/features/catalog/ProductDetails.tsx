@@ -11,15 +11,16 @@ import {
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import agent from "../../app/api/agent";
+import NotFound from "../../app/errors/NotFound";
 import { Product } from "../../app/models/product";
 
 export default function ProductDetails() {
-  const { id } = useParams<string>();
+  const { id } = useParams<{ id: string }>();
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    agent.Catalog.details(Number(id))
+    agent.Catalog.details(parseInt(id))
       .then((response) => setProduct(response))
       .catch((error) => console.log(error))
       .finally(() => setLoading(false));
@@ -27,7 +28,7 @@ export default function ProductDetails() {
 
   if (loading) return <h3>Loading...</h3>;
 
-  if (!product) return <h3>Product not found</h3>;
+  if (!product) return <NotFound />;
 
   return (
     <Grid container spacing={6}>
