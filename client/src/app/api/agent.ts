@@ -1,6 +1,8 @@
+import { fetchFilters } from './../../features/catalog/catalogSlice';
 import { history } from './../../index';
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { toast } from "react-toastify";
+import { request } from 'http';
 
 const sleep = () => new Promise(resolve => setTimeout(resolve, 500));
 
@@ -52,7 +54,8 @@ const requests = {
 
 const Catalog = {
     list: () => requests.get('products'),
-    details: (id: number) => requests.get(`products/${id}`)
+    details: (id: number) => requests.get(`products/${id}`),
+    fetchFilters: () => requests.get('products/filters')
 }
 
 const TestErrors = {
