@@ -18,7 +18,6 @@ const theme = createTheme();
 export default function Login() {
   const history = useHistory();
   const dispatch = useAppDispatch();
-
   const {
     register,
     handleSubmit,
