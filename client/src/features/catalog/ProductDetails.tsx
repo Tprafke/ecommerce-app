@@ -75,7 +75,7 @@ export default function ProductDetails() {
         <img
           src={product.pictureUrl}
           alt={product.name}
-          style={{ width: "100%" }}
+          style={{ width: "75%" }}
         />
       </Grid>
       <Grid item xs={6}>

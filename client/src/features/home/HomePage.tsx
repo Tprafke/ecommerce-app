@@ -8,6 +8,7 @@ export default function HomePage() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    centerMode: true,
   };
 
   return (
@@ -15,23 +16,30 @@ export default function HomePage() {
       <Slider {...settings}>
         <div>
           <img
-            src='/images/hero1.jpg'
+            src='https://i.ibb.co/px2tCc3/jackets.png'
             alt='hero'
-            style={{ display: "block", width: "100%", maxHeight: 500 }}
+            style={{ display: "block", width: "75%", maxHeight: 500 }}
           />
         </div>
         <div>
           <img
-            src='/images/hero2.jpg'
+            src='https://i.ibb.co/0jqHpnp/sneakers.png'
             alt='hero'
-            style={{ display: "block", width: "100%", maxHeight: 500 }}
+            style={{ display: "block", width: "75%", maxHeight: 500 }}
           />
         </div>
         <div>
           <img
-            src='/images/hero3.jpg'
+            src='https://i.ibb.co/GCCdy8t/womens.png'
             alt='hero'
-            style={{ display: "block", width: "100%", maxHeight: 500 }}
+            style={{ display: "block", width: "75%", maxHeight: 500 }}
+          />
+        </div>
+        <div>
+          <img
+            src='https://i.ibb.co/R70vBrQ/men.png'
+            alt='hero'
+            style={{ display: "block", width: "75%", maxHeight: 500 }}
           />
         </div>
       </Slider>
