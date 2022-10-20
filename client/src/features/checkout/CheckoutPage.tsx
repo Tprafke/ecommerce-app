@@ -1,6 +1,8 @@
 import {
   Box,
   Button,
+  List,
+  ListItem,
   Paper,
   Step,
   StepLabel,
@@ -170,6 +172,20 @@ export default function CheckoutPage() {
         <Typography component='h1' variant='h4' align='center'>
           Checkout
         </Typography>
+        {activeStep === 2 && (
+          <>
+            <Typography component='h2' variant='h5' align='left'>
+              Stripe Test Card
+            </Typography>
+            <List>
+              <ListItem>Name on Card: Any test user</ListItem>
+              <ListItem>Card Number: 4242 4242 4242 4242</ListItem>
+              <ListItem>EXP: Any future date</ListItem>
+              <ListItem>CVC: 123</ListItem>
+            </List>
+          </>
+        )}
+
         <Stepper activeStep={activeStep} sx={{ pt: 3, pb: 5 }}>
           {steps.map((label) => (
             <Step key={label}>
