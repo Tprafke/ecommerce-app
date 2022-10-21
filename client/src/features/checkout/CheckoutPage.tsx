@@ -183,6 +183,7 @@ export default function CheckoutPage() {
               <ListItem>EXP: Any future date</ListItem>
               <ListItem>CVC: 123</ListItem>
             </List>
+            <Paper variant='outlined' elevation={3} />
           </>
         )}
 

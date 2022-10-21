@@ -1,0 +1,30 @@
+.masthead {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(
+      135deg,
+      rgb(24, 42, 115) 0%,
+      rgb(33, 138, 174) 69%,
+      rgb(32, 167, 172) 89%
+    ) !important;
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    height: 100vh;
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+  }
+  
+  .masthead h1.ui.header {
+    font-size: 4em;
+  }
+
+  .catalogButton {
+    color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    transition-duration: 0.4s;
+  }
+
+  .catalogButton:hover {
+    background-color: #FFFFFF !important;
+    color: black !important;
+  }
