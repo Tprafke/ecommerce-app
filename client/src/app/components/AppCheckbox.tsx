@@ -15,7 +15,7 @@ export default function AppCheckbox(props: Props) {
         <Checkbox
           {...field}
           checked={field.value}
-          color='secondary'
+          color='primary'
           disabled={props.disabled}
         />
       }

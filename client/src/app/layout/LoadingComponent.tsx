@@ -13,7 +13,7 @@ export default function LoadingComponent({ message = "Loading..." }: Props) {
         alignItems='center'
         height='100vh'
       >
-        <CircularProgress size={100} color='secondary' />
+        <CircularProgress size={100} color='primary' />
         <Typography
           variant='h4'
           sx={{ justifyContent: "center", position: "fixed", top: "60%" }}
